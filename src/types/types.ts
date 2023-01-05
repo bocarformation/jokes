@@ -1,5 +1,3 @@
-
-
 export type Flag = {
     nsfw: boolean;
     religius: boolean;
@@ -9,17 +7,17 @@ export type Flag = {
     explicit: boolean
 }
 
-export type FlagKeys =   "political" 
-
+export type FlagKeys = "political"
 
 export type Joke = {
     id: number;
     safe: boolean;
-    flags: Flag;
+    flags: Flag; 
     lang: "en";
-    setup?: string; 
+    setup?: string;
     delivery?: string;
+    type: "single" | "twopart";
     joke?: string;
-    type: "single" | "twopart"; 
-    category: "Any" | "Misc" | "Programming" | "Dark" | "Pun" | "Spooky" | "Christmas";
+    category: "Any" | "Misc" | "Programming" | "Dark" | "Pun" 
+                    | "Christmas" |"Spooky"
 }
